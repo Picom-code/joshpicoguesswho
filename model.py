@@ -1,8 +1,7 @@
 import scikitgit  as sk
 import pandas as pd
 # create model
-
-
+model = sk.DecisionTreeClassifier()
 
 
 # Feature Engineering
@@ -12,3 +11,5 @@ import pandas as pd
 # Prune the tree using the best hyperparameters
 
 # Crossvalidation using K-fold for tree 
+
+# last step feature importance
