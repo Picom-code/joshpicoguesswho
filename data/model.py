@@ -9,7 +9,7 @@ y = data['ID']
 clf = DecisionTreeClassifier(max_depth=None, random_state=42, ccp_alpha=0.01)
 clf.fit(X, y)
 
-plt.figure(figsize=(30,10))
+plt.figure(figsize=(40,10))
 plot_tree(clf, filled=True, feature_names=X.columns, class_names=sorted(y.unique()), proportion=False, precision=2)
 plt.show()
 
