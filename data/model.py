@@ -2,11 +2,11 @@ import pandas as pd
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('PICO.csv')
+data = pd.read_csv('PICO2.csv')
 X = data.drop('ID', axis=1)  
 y = data['ID']               
 
-clf = DecisionTreeClassifier(max_depth=None, random_state=42, ccp_alpha=0.01)
+clf = DecisionTreeClassifier(max_depth=None, random_state=22)
 clf.fit(X, y)
 
 plt.figure(figsize=(40,10))

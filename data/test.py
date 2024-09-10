@@ -3,11 +3,11 @@ import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('PICO.csv')
+data = pd.read_csv('pico_final_dataset.csv')
 X = data.drop('ID', axis=1)
 y = data['ID']
 
-clf = DecisionTreeClassifier(max_depth=None, random_state=42)
+clf = DecisionTreeClassifier(max_depth=None, random_state=12)
 clf.fit(X, y)
 
 importances = clf.feature_importances_
